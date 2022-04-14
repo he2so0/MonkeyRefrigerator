@@ -1,10 +1,36 @@
 //SingUp.js
-import React from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 import Card from "@mui/material/Card";
 import { CardContent } from "@mui/material";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Login() {
+  const [startDate, setStartDate] = useState(new Date());
+  //   const [selected, setSelected] = React.useState();
+
+  //   let footer = <p>Please pick a day.</p>;
+  //   if (selected) {
+  //     footer = <p>You picked {format(selected, "PP")}.</p>;
+  //   }
+  //const [startDate, setStartDate] = useState(new Date());
+  //   const years = range(1990, getYear(new Date()) + 1, 1);
+  //   const months = [
+  //     "January",
+  //     "February",
+  //     "March",
+  //     "April",
+  //     "May",
+  //     "June",
+  //     "July",
+  //     "August",
+  //     "September",
+  //     "October",
+  //     "November",
+  //     "December",
+  //   ];
+
   return (
     <>
       <div id="signup_content">
@@ -101,6 +127,14 @@ function Login() {
             <h3>
               <label for="birth">생년월일</label>
             </h3>
+            <DatePicker
+              class="datepickerInput"
+              selected={startDate}
+              dateFormat="yyyy.MM.dd"
+              onChange={(date) => {
+                this.setStartDate({ startDate: date });
+              }}
+            />
           </CardContent>
         </Card>
       </div>
