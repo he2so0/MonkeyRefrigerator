@@ -17,7 +17,7 @@ function Main() {
         <Route path="/board">
           <BoardList />
         </Route>
-        <Route path="/signup">
+        <Route path="/signUp">
           <Login />
         </Route>
       </Switch>

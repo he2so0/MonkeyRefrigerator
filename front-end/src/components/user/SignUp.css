@@ -46,6 +46,15 @@ h3 {
 .box_id {
   width: 100%;
   display: flex;
+  margin-bottom: 20px;
+}
+
+.pwchk {
+  margin-bottom: 20px;
+}
+.box_pwchk {
+  width: 100%;
+  display: flex;
 }
 
 #idCheck {
@@ -59,7 +68,7 @@ h3 {
 }
 
 .step_url {
-  height: 50px;
+  height: 30px;
   margin: 10px;
   font-size: 15px;
 }
